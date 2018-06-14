@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Crystal Game</title>
+  <style>
+   .card{
+    position: relative;
+    }
+
+    .card .btn{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: transparent;
+    cursor: pointer;
+    text-align: center;
+    }
+
+</style>
+
+  <!-- Added link to the jQuery Library -->
+
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"> </script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+</head>
+<body>
+ <!-- Creating botton -->
+  <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+          <h1 class="display-4">Crystals Collector!!</h1>
+        </div>
+   </div>
+   <div class = "container">
+   <div class="card.N" style="width: 18rem;">
+  <div class="card-body">
+    <h1>Number to Guess: <span id = "NumGener"></span></h1>
+
+    </div>
+</div> 
+</div>
+
+  <div class="container">
+      <div class="row"> 
+  
+        <div class ="card">
+          <img class="card-img-top" src="assets/images/C1.jpeg" alt="Card image cap">
+          <button class="btn">Click <span id = "card1"></span></button>
+          </div>
+        <div class="card">
+          <img class="card-img-top" src="assets/images/C2.png" alt="Card image cap">
+          <button class="btn">Click<span id = "card2"></span></button>
+        </div>
+        <div class="card">
+          <img class="card-img-top" src="assets/images/C3.jpeg" alt="Card image cap">
+          <button class="btn">Click<span id = "card3"></span></button>
+        </div>
+        <div class="card">
+            <img class="card-img-top" src="assets/images/C4.jpeg" alt="Card image cap">
+            <button class="btn">Click<span id = "card4"></span></button>
+          </div>
+      </div>
+    </div>
+
+    <div class="container">
+   
+         <div class="card border-primary mb-3" style="max-width: 18rem;">
+
+            <strong>Wins: </strong> <span id="win-counter">0</span>
+
+          </div>
+
+            <div class="card border-primary mb-3" style="max-width: 18rem;">
+            <strong>Losses: </strong> <span id="loss-counter">0</span>
+          </div>
+
+          <div class="card border-primary mb-3" style="max-width: 18rem;">
+            <strong>Total: </strong> <span id="total">0</span>
+          </div>
+        </div>
+      
+  <script type="text/javascript" src="assets/javascript/game.js"></script>
+
+
+</script>
+
+</body>
+
+</html>
