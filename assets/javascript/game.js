@@ -36,11 +36,11 @@ $( document ).ready(function(){
   }
   //crystal counter
     $('#card1').on ('click', function(){
-        var crystalValue = ($(this).attr("data-crystalvalue"));
+        var crystalValue = ($(this).attr("card1"));
     crystalValue = parseInt(crystalValue);
     userTotal = [30,50,10,5]
       userTotal = userTotal + num1;
-      console.log("New userTotal= " + userTotal);
+      console.log("#card1= " + userTotal);
       $('#total').text(userTotal); 
             //sets win/lose conditions
           if (userTotal == Random){
@@ -54,7 +54,7 @@ $( document ).ready(function(){
       userTotal = userTotal + num2;
       console.log("New userTotal= " + userTotal);
       $('#total').text(userTotal); 
-          if (userTotal == Random){
+          if (userTotal === Random){
             win();
           }
           else if ( userTotal > Random){
